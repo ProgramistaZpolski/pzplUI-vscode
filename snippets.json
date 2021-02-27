@@ -1,0 +1,430 @@
+{
+	"Basic Template": {
+		"prefix": "template",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"en\" dir=\"ltr\">",
+			"<head>",
+			"\t<meta charset=\"UTF-8\">",
+			"\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+			"\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+			"\t<meta name=\"description\" content=\"Description of the page\">",
+			"\t<title>Document</title>",
+			"\t<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/programistazpolski/pzplui@master/style.min.css\" crossorigin=\"anonymous\">",
+			"</head>",
+			"<body class=\"pzplui-strict-mode\">",
+			"\t<div class=\"text-center\">",
+			"\t\t<h1 class=\"d1\">HELLO WORLD!</h1><br>",
+			"\t\t<p>Edit your HTML file to make changes!</p>",
+			"\t</div>",
+			"</body>",
+			"</html>"
+		],
+		"description": "A basic HTML5 Template for pzplUI"
+	},
+	"Alert": {
+		"prefix": "alert",
+		"body": "<div class=\"alert alert-${1:normal}>Hello World</div>",
+		"description": "An alert"
+	},
+	"Accordion": {
+		"prefix": "accordion",
+		"body": [
+			"<details class=\"accordion\">",
+			"\t<summary>Summary Text</summary>",
+			"\t<p>content</p>",
+			"</details>"
+		],
+		"description": "An accordion"
+	},
+	"Badge": {
+		"prefix": "badge",
+		"body": "<span class=\"badge badge-${1:normal}\">Badge</span>",
+		"description": "A badge"
+	},
+	"Pill Badge": {
+		"prefix": "pill",
+		"body": "<span class=\"badge badge-pill badge-${1:normal}\">Badge</span>",
+		"description": "A badge"
+	},
+	"Box": {
+		"prefix": "box",
+		"body": [
+			"<div class=\"box\">",
+			"\t<p>content</p>",
+			"</div>"
+		],
+		"description": "A badge"
+	},
+	"Button": {
+		"prefix": "button",
+		"body": "<button class=\"btn btn-${1:normal}\">Content</button>",
+		"description": "A button"
+	},
+	"Card": {
+		"prefix": "card",
+		"body": [
+			"<div class=\"card\" style=\"width: 18rem;\">",
+			"\t<img src=\"./myPhoto.png\" class=\"img-fluid\">",
+			"\t",
+			"\t<div class=\"card-body\">",
+			"\t\t<h5>Card title</h5>",
+			"\t\t<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga facere consectetur officiis possimus veritatis ratione.</p>",
+			"\t\t<br><a href=\"#\" class=\"btn btn-normal\">Go somewhere</a>",
+			"\t</div>",
+			"</div>"
+		],
+		"description": "A card"
+	},
+	"Hero": {
+		"prefix": "hero",
+		"body": [
+			"<div class=\"hero ${1:bg-success} consended\">",
+			"\t<h1 class=\"title\">Hello World</h1>",
+			"\t<h2 class=\"Subtitle\">Lorem ipsum</h2>",
+			"</div>"
+		],
+		"description": "A hero component"
+	},
+	"Modal": {
+		"prefix": "modal",
+		"body": [
+			"<div class=\"modal text-dark\" id=\"${1:myModal}\">",
+			"\t<div class=\"modal-content\">",
+			"\t\t<div class=\"modal-header consended\">",
+			"\t\t\t<h5 class=\"modal-title\">Modal title</h5>",
+			"\t\t</div>",
+			"\t\t<div class=\"modal-body\">",
+			"\t\t\t<p>Hello!</p>",
+			"\t\t</div>",
+			"\t\t<div class=\"modal-footer\">",
+			"\t\t\t<button type=\"button\" class=\"btn btn-secondary\">Close</button>",
+			"\t\t\t<button type=\"button\" class=\"btn btn-normal\">Save changes</button>",
+			"\t\t</div>",
+			"\t</div>",
+			"</div>"
+		],
+		"description": "A modal"
+	},
+	"Media Object": {
+		"prefix": "media",
+		"body": [
+			"<div class=\"media\">",
+			"\t<img alt=\"Placeholder\" style=\"width: 64px; height: 64px;\"",
+			"\t\tsrc=\"${1:img.webp}\">",
+			"\t<div class=\"media-body\">",
+			"\t\t<h5>Media heading</h5>",
+			"\t\tCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus",
+			"\t\todio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate",
+			"\t\tfringilla. Donec lacinia congue felis in faucibus.",
+			"",
+			"\t\t<div class=\"media\">",
+			"\t\t\t<a href=\"#\">",
+			"\t\t\t\t<img alt=\"Placeholder\" style=\"width: 64px; height: 64px;\"",
+			"\t\t\t\t\tsrc=\"{1:img.webp}\">",
+			"\t\t\t</a>",
+			"\t\t\t<div class=\"media-body\">",
+			"\t\t\t\t<h5>Media heading</h5>",
+			"\t\t\t\tCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras",
+			"\t\t\t\tpurus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi",
+			"\t\t\t\tvulputate fringilla. Donec lacinia congue felis in faucibus.",
+			"\t\t\t</div>",
+			"\t\t</div>",
+			"\t</div>",
+			"</div>"
+		],
+		"description": "A media object"
+	},
+	"Navbar": {
+		"prefix": "navbar",
+		"body": [
+			"<nav class=\"navbar bg-dark text-white\">",
+			"\t<a class=\"navbar-brand text-white\" href=\"javascript:void(0)\">Company</a>",
+			"\t<ul>",
+			"\t\t<li>",
+			"\t\t\t<a href=\"javascript:void(0)\" class=\"text-white\">Homepage</a>",
+			"\t\t</li>",
+			"\t\t<li>",
+			"\t\t\t<a href=\"javascript:void(0)\" class=\"text-white\">News</a>",
+			"\t\t</li>",
+			"\t\t<li>",
+			"\t\t\t<a href=\"javascript:void(0)\" class=\"text-white\">Contact</a>",
+			"\t\t</li>",
+			"\t</ul>",
+			"</nav>"
+		],
+		"description": "A navbar"
+	},
+	"Pagination": {
+		"prefix": "paginate",
+		"body": [
+			"<nav>",
+			"\t<ul class=\"pagination\">",
+			"\t\t<li class=\"pag-item active\" aria-current=\"page\">",
+			"\t\t\t<span class=\"pag-link\">",
+			"\t\t\t\t1",
+			"\t\t\t\t<span class=\"sr-only\">(current)</span>",
+			"\t\t\t</span>",
+			"\t\t</li>",
+			"\t\t<li class=\"pag-item\"><a class=\"pag-link\" href=\"#\">2</a></li>",
+			"\t\t<li class=\"pag-item\"><a class=\"pag-link\" href=\"#\">3</a></li>",
+			"\t</ul>",
+			"</nav>"
+		],
+		"description": "A pagination"
+	},
+	"Spinner": {
+		"prefix": "spin",
+		"body": [
+			"<div class=\"spinner text-${1:normal}\" role=\"status\">",
+			"\t<span class=\"sr-only\">Loading...</span>",
+			"</div>"
+		],
+		"description": "A spinner"
+	},
+	"bg-success": {
+		"prefix": "bg-success",
+		"body": "bg-success",
+		"description": "bg-success"
+	},
+	"bg-info": {
+		"prefix": "bg-info",
+		"body": "bg-info",
+		"description": "bg-info"
+	},
+	"bg-danger": {
+		"prefix": "bg-danger",
+		"body": "bg-danger",
+		"description": "bg-danger"
+	},
+	"bg-error": {
+		"prefix": "bg-error",
+		"body": "bg-error",
+		"description": "bg-error"
+	},
+	"bg-normal": {
+		"prefix": "bg-normal",
+		"body": "bg-normal",
+		"description": "bg-normal"
+	},
+	"bg-dark": {
+		"prefix": "bg-dark",
+		"body": "bg-dark",
+		"description": "bg-dark"
+	},
+	"bg-secondary": {
+		"prefix": "bg-secondary",
+		"body": "bg-secondary",
+		"description": "bg-secondary"
+	},
+	"text-success": {
+		"prefix": "text-success",
+		"body": "text-success",
+		"description": "text-success"
+	},
+	"text-info": {
+		"prefix": "text-info",
+		"body": "text-info",
+		"description": "text-info"
+	},
+	"text-danger": {
+		"prefix": "text-danger",
+		"body": "text-danger",
+		"description": "text-danger"
+	},
+	"text-error": {
+		"prefix": "text-error",
+		"body": "text-error",
+		"description": "text-error"
+	},
+	"text-normal": {
+		"prefix": "text-normal",
+		"body": "text-normal",
+		"description": "text-normal"
+	},
+	"text-dark": {
+		"prefix": "text-dark",
+		"body": "text-dark",
+		"description": "text-dark"
+	},
+	"text-secondary": {
+		"prefix": "text-secondary",
+		"body": "text-secondary",
+		"description": "text-secondary"
+	},
+	"border-success": {
+		"prefix": "border-success",
+		"body": "border-success",
+		"description": "border-success"
+	},
+	"border-info": {
+		"prefix": "border-info",
+		"body": "border-info",
+		"description": "border-info"
+	},
+	"border-danger": {
+		"prefix": "border-danger",
+		"body": "border-danger",
+		"description": "border-danger"
+	},
+	"border-error": {
+		"prefix": "border-error",
+		"body": "border-error",
+		"description": "border-error"
+	},
+	"border-normal": {
+		"prefix": "border-normal",
+		"body": "border-normal",
+		"description": "border-normal"
+	},
+	"border-dark": {
+		"prefix": "border-dark",
+		"body": "border-dark",
+		"description": "border-dark"
+	},
+	"border-secondary": {
+		"prefix": "border-secondary",
+		"body": "border-secondary",
+		"description": "border-secondary"
+	},
+	"column": {
+		"prefix": "column",
+		"body": "column",
+		"description": "column"
+	},
+	"flexbox": {
+		"prefix": "flexbox",
+		"body": "flexbox",
+		"description": "flexbox"
+	},
+	"flex-100": {
+		"prefix": "flex-100",
+		"body": "flex-100",
+		"description": "flex-100"
+	},
+	"flex-5": {
+		"prefix": "flex-5",
+		"body": "flex-5",
+		"description": "flex-5"
+	},
+	"flex-10": {
+		"prefix": "flex-10",
+		"body": "flex-10",
+		"description": "flex-10"
+	},
+	"flex-15": {
+		"prefix": "flex-15",
+		"body": "flex-15",
+		"description": "flex-15"
+	},
+	"flex-20": {
+		"prefix": "flex-20",
+		"body": "flex-20",
+		"description": "flex-20"
+	},
+	"flex-25": {
+		"prefix": "flex-25",
+		"body": "flex-25",
+		"description": "flex-25"
+	},
+	"flex-30": {
+		"prefix": "flex-30",
+		"body": "flex-30",
+		"description": "flex-30"
+	},
+	"flex-35": {
+		"prefix": "flex-35",
+		"body": "flex-35",
+		"description": "flex-35"
+	},
+	"flex-40": {
+		"prefix": "flex-40",
+		"body": "flex-40",
+		"description": "flex-40"
+	},
+	"flex-45": {
+		"prefix": "flex-45",
+		"body": "flex-45",
+		"description": "flex-45"
+	},
+	"flex-50": {
+		"prefix": "flex-50",
+		"body": "flex-50",
+		"description": "flex-50"
+	},
+	"flex-55": {
+		"prefix": "flex-55",
+		"body": "flex-55",
+		"description": "flex-55"
+	},
+	"flex-60": {
+		"prefix": "flex-60",
+		"body": "flex-60",
+		"description": "flex-60"
+	},
+	"flex-65": {
+		"prefix": "flex-65",
+		"body": "flex-65",
+		"description": "flex-65"
+	},
+	"flex-70": {
+		"prefix": "flex-70",
+		"body": "flex-70",
+		"description": "flex-70"
+	},
+	"flex-75": {
+		"prefix": "flex-75",
+		"body": "flex-75",
+		"description": "flex-75"
+	},
+	"flex-80": {
+		"prefix": "flex-80",
+		"body": "flex-80",
+		"description": "flex-80"
+	},
+	"flex-85": {
+		"prefix": "flex-85",
+		"body": "flex-85",
+		"description": "flex-85"
+	},
+	"flex-90": {
+		"prefix": "flex-90",
+		"body": "flex-90",
+		"description": "flex-90"
+	},
+	"flex-95": {
+		"prefix": "flex-95",
+		"body": "flex-95",
+		"description": "flex-95"
+	},
+	"center-flex": {
+		"prefix": "center-flex",
+		"body": "center-flex",
+		"description": "center-flex"
+	},
+	"btn-normal": {
+		"prefix": "btn-normal",
+		"body": "btn btn-normal",
+		"description": "btn-normal"
+	},
+	"btn-success": {
+		"prefix": "btn-success",
+		"body": "btn btn-success",
+		"description": "btn-success"
+	},
+	"btn-error": {
+		"prefix": "btn-error",
+		"body": "btn btn-error",
+		"description": "btn-error"
+	},
+	"btn-danger": {
+		"prefix": "btn-danger",
+		"body": "btn btn-danger",
+		"description": "btn-danger"
+	},
+	"btn-info": {
+		"prefix": "btn-info",
+		"body": "btn btn-info",
+		"description": "btn-info"
+	}
+}
